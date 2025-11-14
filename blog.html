@@ -1,0 +1,45 @@
+---
+layout: default
+title: Blog
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <a href="{{ '/' | relative_url }}">Home</a>
+    <a href="{{ '/about.html' | relative_url }}">About Me</a>
+    <a href="{{ '/socials.html' | relative_url }}">Socials</a>
+    <a href="{{ '/hardware.html' | relative_url }}">Hardware</a>
+    <a href="{{ '/blog.html' | relative_url }}" class="nav-btn">Blog Posts</a>
+    <button class="toggle-btn" onclick="toggleTheme()">Toggle Theme</button>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <h1>Blog Posts</h1>
+    <p>Welcome to my blog! Here I share updates, creative projects, tutorials, and thoughts on tech, music, and more.</p>
+
+    <section>
+      <h2>Latest Posts</h2>
+      <ul>
+        {% for post in site.posts %}
+          <li>
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            <span> — {{ post.date | date: "%B %d, %Y" }}</span>
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
+  </main>
+
+  <!-- Script -->
+  <script src="{{ '/script.js' | relative_url }}"></script>
+</body>
+</html>
