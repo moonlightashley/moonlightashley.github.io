@@ -5,22 +5,38 @@
   <title>Hardware</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    /* Dark mode styles */
+    /* Default light mode */
+    body {
+      background-color: #ffffff;
+      color: #000000;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Dark mode override */
     body.dark-mode {
       background-color: #121212;
       color: #ffffff;
     }
+
+    nav {
+      margin-bottom: 1rem;
+    }
+
     nav a {
+      margin-right: 1rem;
+      text-decoration: none;
       color: inherit;
     }
+
     .toggle-btn {
-      margin-left: 1rem;
       padding: 0.5rem 1rem;
       cursor: pointer;
     }
+
     section {
       margin-bottom: 2rem;
     }
+
     h2 {
       margin-top: 1rem;
       border-bottom: 2px solid currentColor;
