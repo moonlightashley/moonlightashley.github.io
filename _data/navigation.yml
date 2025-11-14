@@ -1,2 +1,11 @@
+# Main navigation
+- title: Home
+  url: /index/
+- title: About
+  url: /about/
+- title: Socials
+  url: /socials/
+- title: Hardware
+  url: /hardware/
 - title: Blog
   url: /blog/
