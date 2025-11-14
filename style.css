@@ -75,3 +75,39 @@ main {
   padding: 40px;
   text-align: center;
 }
+
+/* Social icons */
+.social-icons {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.25);
+  backdrop-filter: blur(6px);
+  transition: transform 0.3s, background 0.3s;
+  color: inherit; /* SVG inherits text color */
+}
+
+body.dark .social-icons a {
+  background: rgba(0,0,0,0.4);
+}
+
+.social-icons a:hover {
+  transform: scale(1.15);
+  background: rgba(255,255,255,0.4);
+}
+
+.social-icons svg {
+  width: 32px;
+  height: 32px;
+  fill: currentColor; /* ensures visibility in both themes */
+}
