@@ -1,1 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="socials.html">Socials</a>
+    <a href="hardware.html">Hardware</a>
+    <a href="blog.html" class="nav-btn">Blog Posts</a>
+    <a href="contact.html" class="nav-btn">Contact Me</a>
+    <button class="toggle-btn" onclick="toggleTheme()">Toggle Theme</button>
+  </nav>
 
+  <!-- Main Content -->
+  <main>
+    <h1>Contact Me</h1>
+    <p>Have a question, idea, or collaboration? Drop me a message below.</p>
+
+    <!-- Contact Form (Formspree Integration) -->
+    <form action="https://formspree.io/f/yourFormID" method="POST" class="contact-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="_replyto" placeholder="Your email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="6" placeholder="Your message" required></textarea>
+
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </main>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
