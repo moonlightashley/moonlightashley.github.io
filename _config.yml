@@ -1,8 +1,0 @@
-title: My Site
-description: A Jekyll site using the TeXt theme
-url: "https://<moonlightashley>.github.io" # replace with your GitHub Pages URL
-
-remote_theme: kitian616/jekyll-TeXt-theme
-
-plugins:
-  - jekyll-remote-theme
